@@ -24,7 +24,6 @@ def send(request):
     email = request.GET.get('email')
     message = request.GET.get('message')
     
-
     User.objects.create(
         Name = name,
         Email = email,
