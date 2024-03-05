@@ -32,3 +32,5 @@ def send(request):
     )
     msg = "Send Successfully"
     return render(request,'contact.html',{"msg":msg})
+
+
