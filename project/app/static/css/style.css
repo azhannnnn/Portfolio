@@ -1864,3 +1864,52 @@
     .timeline-text { max-width: 700px; }
   
   }
+
+
+
+
+
+  .button {
+    width: 100px;
+    height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    cursor: pointer;
+    border: 1px solid var(--bittersweet-shimmer);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.137);
+  }
+  
+  .text {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  .arrow path {
+    fill: var(--white-1);
+  }
+  
+  .button:hover .arrow {
+    animation: slide-in-left 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  
+  @keyframes slide-in-left {
+    0% {
+      transform: translateX(-8px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+  
+  .button:active {
+    transform: scale(0.97);
+  }

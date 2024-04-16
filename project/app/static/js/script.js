@@ -108,6 +108,14 @@ for (let i = 0; i < filterBtn.length; i++) {
   });
 
 }
+function previewImage() {
+  Swal.fire({
+    imageUrl: "../static/images/Azhanresume.jpg",
+    imageAlt: "Resume"
+  });
+  
+}
+
 
 
 
